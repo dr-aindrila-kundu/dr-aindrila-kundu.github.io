@@ -1,6 +1,6 @@
 # Dr. Aindrila Kundu — Official Website
 
-**Obstetrician, Gynaecologist & Laparoscopic Specialist, Kolkata**  
+**Obstetrician, Gynaecologist & Laparoscopic Specialist, Kolkata.**  
 MBBS · MS · MRCOG 1 · WBMC-87200 · FOGSI · BOGS
 
 🌐 Live at: `https://dr-aindrila-kundu.github.io/`  
