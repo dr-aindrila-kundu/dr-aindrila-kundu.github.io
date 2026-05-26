@@ -1,0 +1,9 @@
+# robots.txt — Dr. Aindrila Kundu Website
+# https://dr-aindrila-kundu.github.io/
+
+User-agent: *
+Allow: /
+Disallow: /assets/images/
+
+# Sitemap location
+Sitemap: https://dr-aindrila-kundu.github.io/sitemap.xml

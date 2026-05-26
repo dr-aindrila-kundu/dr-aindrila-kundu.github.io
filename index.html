@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!--
+  BUG FIX: class="no-js" added to <html>.
+  script.js removes it immediately on load.
+  CSS gates all opacity:0 animations behind html:not(.no-js)
+  so if JS ever fails, ALL content stays fully visible.
+-->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PRIMARY META -->
+  <title>Dr. Aindrila Kundu | Obstetrician, Gynaecologist &amp; Laparoscopic Specialist &mdash; Kolkata</title>
+  <meta name="description" content="Dr. Aindrila Kundu &mdash; Obstetrician, Gynaecologist &amp; Laparoscopic Specialist in Kolkata. MBBS, MS, MRCOG 1. 700+ babies delivered. Expert care for high-risk pregnancies, infertility &amp; women's health in New Alipore, Kolkata." />
+  <meta name="keywords" content="best gynecologist kolkata, obstetrician kolkata, laparoscopic specialist kolkata, high risk pregnancy kolkata, infertility specialist kolkata, Dr Aindrila Kundu, that gynae girl, new alipore gynecologist, FOGSI, BOGS, women health kolkata, IUI kolkata, PCOS treatment kolkata, endometriosis kolkata, contraception kolkata" />
+  <meta name="author" content="Dr. Aindrila Kundu" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0B1D3A" />
+
+  <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
+  <meta name="google-site-verification" content="awGZrvQm39nF1a_0NeESnZqLLfDpG68JLbesLkctSHY" />
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://dr-aindrila-kundu.github.io/" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://dr-aindrila-kundu.github.io/" />
+  <meta property="og:title"       content="Dr. Aindrila Kundu | Obstetrician &amp; Gynaecologist, Kolkata" />
+  <meta property="og:description" content="Advanced obstetric &amp; gynaecological care with compassion. 700+ babies delivered. Expert in high-risk pregnancies &amp; infertility &mdash; New Alipore, Kolkata." />
+  <meta property="og:image"       content="https://dr-aindrila-kundu.github.io/assets/images/dr-aindrila-hero.jpg" />
+  <meta property="og:image:alt"   content="Dr. Aindrila Kundu &mdash; Obstetrician and Gynaecologist, Kolkata" />
+  <meta property="og:locale"      content="en_IN" />
+  <meta property="og:site_name"   content="Dr. Aindrila Kundu" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Dr. Aindrila Kundu | Obstetrician &amp; Gynaecologist, Kolkata" />
+  <meta name="twitter:description" content="Expert women's healthcare, pregnancy care, infertility treatment &amp; laparoscopic surgery in Kolkata." />
+  <meta name="twitter:image"       content="https://dr-aindrila-kundu.github.io/assets/images/dr-aindrila-hero.jpg" />
+
+  <!-- STRUCTURED DATA — JSON-LD Physician Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Aindrila Kundu",
+    "description": "Obstetrician, Gynaecologist and Laparoscopic Specialist in Kolkata with 5+ years experience and 700+ babies delivered.",
+    "url": "https://dr-aindrila-kundu.github.io/",
+    "telephone": "+917865902082",
+    "email": "aindrila21nov@gmail.com",
+    "image": "https://dr-aindrila-kundu.github.io/assets/images/dr-aindrila-hero.jpg",
+    "medicalSpecialty": ["Obstetrics and Gynecology", "Laparoscopic Surgery"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New Alipore",
+      "addressRegion": "West Bengal",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Su 09:00-21:00",
+    "sameAs": [
+      "https://www.instagram.com/that_gynae_girl",
+      "https://www.linkedin.com/in/aindrila-kundu-8461b1305/"
+    ]
+  }
+  </script>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand" aria-label="Dr. Aindrila Kundu - Home">
+        <span class="brand-name">Dr. Aindrila Kundu</span>
+        <span class="brand-creds">MBBS &middot; MS &middot; MRCOG 1</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#services"     class="nav-link">Services</a></li>
+        <li><a href="#conditions"   class="nav-link">Conditions</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact"      class="nav-cta">Book Consultation</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="home" class="hero" aria-label="Introduction">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <span class="hero-location">&#128205; Kolkata &nbsp;&middot;&nbsp; New Alipore &nbsp;&middot;&nbsp; Est. 2019</span>
+        <h1 class="hero-headline">
+          Advanced Care.<br />
+          <em>Deep Compassion.</em>
+        </h1>
+        <p class="hero-tagline">Where every mother's journey is held with expertise, empathy, and unwavering dedication &mdash; from first consultation to the joy of new life.</p>
+        <p class="hero-creds-line">Dr. Aindrila Kundu &nbsp;&middot;&nbsp; MBBS &nbsp;&middot;&nbsp; MS &nbsp;&middot;&nbsp; MRCOG 1 &nbsp;&middot;&nbsp; 5+ Years Experience</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Book a Consultation</a>
+          <a href="https://wa.me/917865902082" target="_blank" rel="noopener noreferrer" class="btn-outline" aria-label="Chat with Dr. Aindrila on WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.522 5.837L.057 23.882l6.194-1.623C7.871 23.414 9.88 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.898 0-3.673-.508-5.193-1.394l-.371-.22-3.676.964.981-3.578-.242-.381C2.614 15.77 2 13.955 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+        <div class="hero-trust" aria-label="Professional memberships">
+          <span class="trust-badge">FOGSI Member</span>
+          <span class="trust-sep" aria-hidden="true">&middot;</span>
+          <span class="trust-badge">BOGS Member</span>
+          <span class="trust-sep" aria-hidden="true">&middot;</span>
+          <span class="trust-badge">WBMC Reg. 87200</span>
+        </div>
+      </div>
+
+      <div class="hero-image-col" aria-hidden="true">
+        <div class="hero-img-frame">
+          <img
+            src="assets/images/dr-aindrila-hero.jpg"
+            alt="Dr. Aindrila Kundu holding a newborn after delivery - Obstetrician and Gynaecologist, Kolkata"
+            class="hero-img"
+            width="440"
+            height="587"
+            loading="eager"
+            decoding="async"
+          />
+          <div class="img-ph-inner" aria-hidden="true"><span>&#128248;</span><p>Photo Coming Soon</p></div>
+          <div class="hero-deco deco-circle"></div>
+        </div>
+        <div class="float-badge badge-top" aria-hidden="true">
+          <span class="fb-num">700+</span>
+          <span class="fb-lbl">Babies Delivered</span>
+        </div>
+        <div class="float-badge badge-bottom" aria-hidden="true">
+          <span class="fb-num">5+</span>
+          <span class="fb-lbl">Years Experience</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ TICKER ═══════════ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span>FOGSI Member</span><span class="t-dot">&#10022;</span>
+      <span>BOGS Member</span><span class="t-dot">&#10022;</span>
+      <span>700+ Babies Delivered</span><span class="t-dot">&#10022;</span>
+      <span>100+ High Risk Pregnancies</span><span class="t-dot">&#10022;</span>
+      <span>Laparoscopic Specialist</span><span class="t-dot">&#10022;</span>
+      <span>MS &middot; MRCOG 1</span><span class="t-dot">&#10022;</span>
+      <span>Infertility Expert</span><span class="t-dot">&#10022;</span>
+      <span>Contraception Counselling</span><span class="t-dot">&#10022;</span>
+      <span>Kolkata &middot; New Alipore</span><span class="t-dot">&#10022;</span>
+      <span>FOGSI Member</span><span class="t-dot">&#10022;</span>
+      <span>BOGS Member</span><span class="t-dot">&#10022;</span>
+      <span>700+ Babies Delivered</span><span class="t-dot">&#10022;</span>
+      <span>100+ High Risk Pregnancies</span><span class="t-dot">&#10022;</span>
+      <span>Laparoscopic Specialist</span><span class="t-dot">&#10022;</span>
+      <span>MS &middot; MRCOG 1</span><span class="t-dot">&#10022;</span>
+      <span>Infertility Expert</span><span class="t-dot">&#10022;</span>
+      <span>Contraception Counselling</span><span class="t-dot">&#10022;</span>
+      <span>Kolkata &middot; New Alipore</span><span class="t-dot">&#10022;</span>
+    </div>
+  </div>
+
+  <!-- ═══════════ STATS ═══════════ -->
+  <section class="stats-section" aria-label="Key statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-target="700">
+          <p class="stat-num"><span class="count-up">700</span>+</p>
+          <p class="stat-label">Babies Delivered</p>
+          <p class="stat-note">700+ safe deliveries</p>
+        </div>
+        <div class="stat-card" data-target="5">
+          <p class="stat-num"><span class="count-up">5</span>+</p>
+          <p class="stat-label">Years of Excellence</p>
+          <p class="stat-note">Dedicated to women's health</p>
+        </div>
+        <div class="stat-card" data-target="100">
+          <p class="stat-num"><span class="count-up">100</span>+</p>
+          <p class="stat-label">High Risk Cases</p>
+          <p class="stat-note">Managed with precision</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-num stat-text">9AM&ndash;9PM</p>
+          <p class="stat-label">Available Daily</p>
+          <p class="stat-note">Every day of the week</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ WHY ═══════════ -->
+  <section id="why" class="why-section" aria-label="Why patients trust Dr. Aindrila">
+    <div class="container">
+      <p class="section-tag">The Difference</p>
+      <h2 class="section-h2">Why Patients Trust <em>Dr. Aindrila</em></h2>
+      <p class="section-sub">Surgical precision and compassionate presence &mdash; in equal measure.</p>
+      <div class="why-grid">
+
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">&#129514;</div>
+          <h3>A Compassionate Listener</h3>
+          <p>Every consultation is unhurried, attentive, and deeply human. Dr. Aindrila believes in truly hearing her patients &mdash; their fears, their hopes &mdash; before anything else. You are always seen and heard here.</p>
+        </div>
+
+        <div class="why-card why-card--featured reveal">
+          <div class="why-icon" aria-hidden="true">&#128300;</div>
+          <h3>Evidence-Based Excellence</h3>
+          <p>Holding MS and MRCOG 1 qualifications, Dr. Aindrila remains rigorously updated with the latest global guidelines and surgical techniques &mdash; bringing world-class women's healthcare to Kolkata.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">&#128155;</div>
+          <h3>A Holistic Healer</h3>
+          <p>A dancer and avid reader, Dr. Aindrila understands that healing women goes far beyond the clinical. She treats the whole woman &mdash; nurturing physical and emotional wellbeing in equal measure.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about" class="about-section" aria-label="About Dr. Aindrila Kundu">
+    <div class="container about-grid">
+
+      <div class="about-img-col reveal">
+        <div class="about-img-wrap">
+          <img
+            src="assets/images/dr-aindrila-surgery.jpg"
+            alt="Dr. Aindrila Kundu performing surgery in the operating theatre"
+            width="480"
+            height="640"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="img-ph-inner" aria-hidden="true"><span>&#128248;</span><p>Photo Coming Soon</p></div>
+        </div>
+        <blockquote class="about-quote">
+          <p>&ldquo;Since my internship days I fell for Obstetrics &amp; Gynaecology. In women&rsquo;s health I found my passion &mdash; and babies are the cherry on top.&rdquo;</p>
+          <cite>&mdash; Dr. Aindrila Kundu</cite>
+        </blockquote>
+      </div>
+
+      <div class="about-text-col reveal">
+        <p class="section-tag">About</p>
+        <h2 class="section-h2">A Surgeon Who Listens.<br /><em>A Doctor Who Cares.</em></h2>
+        <p class="about-lead">Dr. Aindrila Kundu is a dedicated Obstetrician, Gynaecologist, and Laparoscopic Specialist practising in Kolkata. With over 5 years of experience, she has delivered 700+ babies and managed 100+ high-risk pregnancies with precision and heart.</p>
+        <p class="about-body">Her calling began during internship, where she discovered a profound love for women&rsquo;s health. That passion has only deepened, driving her to pursue advanced qualifications and stay current with evidence-based practice. She approaches every patient as a whole person &mdash; not just a case file. To see a happy, healthy mother and baby, she says, makes every exhausting moment profoundly worthwhile.</p>
+
+        <div class="creds-table" role="table" aria-label="Qualifications and registration">
+          <div class="cred-row" role="row">
+            <span class="cred-key" role="cell">MBBS</span>
+            <span class="cred-val" role="cell">Bachelor of Medicine &amp; Surgery</span>
+          </div>
+          <div class="cred-row" role="row">
+            <span class="cred-key" role="cell">MS</span>
+            <span class="cred-val" role="cell">Master of Surgery &mdash; Obstetrics &amp; Gynaecology</span>
+          </div>
+          <div class="cred-row" role="row">
+            <span class="cred-key" role="cell">MRCOG 1</span>
+            <span class="cred-val" role="cell">Member, Royal College of Obstetricians &amp; Gynaecologists</span>
+          </div>
+          <div class="cred-row" role="row">
+            <span class="cred-key" role="cell">Memberships</span>
+            <span class="cred-val" role="cell">FOGSI &nbsp;&middot;&nbsp; BOGS</span>
+          </div>
+          <div class="cred-row" role="row">
+            <span class="cred-key" role="cell">Registration</span>
+            <span class="cred-val" role="cell">WBMC-87200 &nbsp;&middot;&nbsp; West Bengal Medical Council</span>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-primary">Book a Consultation &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ GALLERY ═══════════ -->
+  <section class="gallery-section" aria-label="Patient moments gallery">
+    <div class="container">
+      <p class="section-tag">Moments of Joy</p>
+      <h2 class="section-h2">With Our Patients</h2>
+      <p class="section-sub">Every new life is a miracle. Precious moments Dr. Aindrila has been privileged to be part of.</p>
+      <div class="gallery-grid">
+        <div class="gal-item">
+          <img src="assets/images/gallery-joy-01.jpg" alt="Dr. Aindrila Kundu holding a newborn - a moment of joy after safe delivery" loading="lazy" decoding="async" />
+        </div>
+        <div class="gal-item">
+          <img src="assets/images/gallery-joy-02.jpg" alt="Dr. Aindrila Kundu in the operating theatre performing a procedure" loading="lazy" decoding="async" />
+        </div>
+        <div class="gal-item ph" aria-hidden="true"><span>&#128248;</span></div>
+        <div class="gal-item ph" aria-hidden="true"><span>&#128248;</span></div>
+        <div class="gal-item ph" aria-hidden="true"><span>&#128248;</span></div>
+        <div class="gal-item ph" aria-hidden="true"><span>&#128248;</span></div>
+        <div class="gal-item ph" aria-hidden="true"><span>&#128248;</span></div>
+        <div class="gal-item ph" aria-hidden="true"><span>&#128248;</span></div>
+      </div>
+      <p class="gallery-note">
+        Photos coming soon &nbsp;&middot;&nbsp; Follow
+        <a href="https://www.instagram.com/that_gynae_girl" target="_blank" rel="noopener noreferrer" aria-label="Follow Dr. Aindrila on Instagram">@that_gynae_girl</a>
+        on Instagram for updates
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════ SERVICES ═══════════ -->
+  <section id="services" class="services-section" aria-label="Areas of specialisation">
+    <div class="container">
+      <p class="section-tag">Expertise</p>
+      <h2 class="section-h2">Areas of Specialisation</h2>
+      <div class="services-grid">
+
+        <article class="svc-card reveal">
+          <div class="svc-emoji" aria-hidden="true">&#129330;</div>
+          <span class="svc-tag">Obstetrician &middot; Kolkata</span>
+          <h3>Antenatal, Intrapartum &amp; Postnatal Care</h3>
+          <p>Comprehensive, personalised care through every stage of your pregnancy &mdash; from first scan to safe delivery and postnatal recovery. Special expertise in high-risk pregnancies.</p>
+          <ul aria-label="Obstetrics services">
+            <li>High-Risk Pregnancy Management</li>
+            <li>Antenatal Monitoring &amp; Counselling</li>
+            <li>Intrapartum &amp; Delivery Support</li>
+            <li>Postnatal Care &amp; Recovery</li>
+            <li>Normal &amp; LSCS Delivery</li>
+            <li>Contraception Counselling &amp; Management</li>
+          </ul>
+        </article>
+
+        <article class="svc-card svc-card--featured reveal">
+          <div class="svc-emoji" aria-hidden="true">&#128300;</div>
+          <span class="svc-tag">Infertility Specialist &middot; Kolkata</span>
+          <h3>Infertility &amp; Reproductive Health</h3>
+          <p>A compassionate, evidence-based approach &mdash; from thorough fertility evaluation through advanced treatment. Honest guidance and emotional support at every step of your parenthood journey.</p>
+          <ul aria-label="Fertility services">
+            <li>Comprehensive Fertility Evaluation</li>
+            <li>Ovulation Induction</li>
+            <li>IUI (Intrauterine Insemination)</li>
+            <li>PCOS Management &amp; Treatment</li>
+            <li>Endometriosis &amp; Fertility</li>
+            <li>Hormonal Regulation</li>
+          </ul>
+        </article>
+
+        <article class="svc-card reveal">
+          <div class="svc-emoji" aria-hidden="true">&#9877;&#65039;</div>
+          <span class="svc-tag">Laparoscopic Surgeon &middot; Kolkata</span>
+          <h3>Gynaecology &amp; Laparoscopic Surgery</h3>
+          <p>Advanced minimally invasive procedures for a broad range of gynaecological conditions &mdash; faster recovery, smaller incisions, and precise outcomes using the latest techniques.</p>
+          <ul aria-label="Laparoscopy services">
+            <li>Diagnostic Laparoscopy</li>
+            <li>Ovarian Cyst Surgery</li>
+            <li>Fibroid Removal (Myomectomy)</li>
+            <li>Abnormal Uterine Bleeding (AUB)</li>
+            <li>Chronic Pelvic Pain Management</li>
+            <li>Hysteroscopy</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONDITIONS ═══════════ -->
+  <section id="conditions" class="conditions-section" aria-label="Conditions treated">
+    <div class="container">
+      <p class="section-tag">Conditions Treated</p>
+      <h2 class="section-h2">Comprehensive Women&rsquo;s Health</h2>
+      <p class="section-sub">Expert care from diagnosis to full recovery across the spectrum of women&rsquo;s reproductive health.</p>
+      <div class="cond-grid">
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">Medical &middot; Fertility</span>
+          <h4>PCOS</h4>
+          <p>Hormonal regulation, metabolic support, and fertility-focused treatment for Polycystic Ovary Syndrome.</p>
+        </div>
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">Surgery &middot; Medical</span>
+          <h4>Endometriosis</h4>
+          <p>Advanced excision and pain management, with fertility preservation wherever possible.</p>
+        </div>
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">IUI &middot; Fertility</span>
+          <h4>Infertility</h4>
+          <p>Complete fertility workup and evidence-based treatment tailored to your unique situation.</p>
+        </div>
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">Medical &middot; Surgery</span>
+          <h4>Abnormal Uterine Bleeding</h4>
+          <p>Thorough evaluation and targeted treatment of heavy, irregular, or absent menstrual bleeding.</p>
+        </div>
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">Diagnosis &middot; Surgery</span>
+          <h4>Chronic Pelvic Pain</h4>
+          <p>Investigation and laparoscopic relief &mdash; finding the root cause, not just managing symptoms.</p>
+        </div>
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">Obstetrics &middot; High Risk</span>
+          <h4>High Risk Pregnancy</h4>
+          <p>Specialised monitoring and management &mdash; 100+ complex cases handled with care and precision.</p>
+        </div>
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">Surgery &middot; Diagnosis</span>
+          <h4>Ovarian Cysts</h4>
+          <p>Diagnostic and surgical management of simple, complex, and endometriotic ovarian cysts.</p>
+        </div>
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">Screening &middot; Medical</span>
+          <h4>Cervical Conditions</h4>
+          <p>Colposcopy, polyp removal, and management of cervical abnormalities and infections.</p>
+        </div>
+
+        <div class="cond-card reveal">
+          <span class="cond-tag">Counselling &middot; Medical</span>
+          <h4>Contraception Management</h4>
+          <p>Personalised contraception counselling covering pills, IUDs, implants, and emergency options &mdash; empowering informed choices for every woman.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TESTIMONIALS ═══════════ -->
+  <section id="testimonials" class="testimonials-section" aria-label="Patient testimonials">
+    <div class="container">
+      <p class="section-tag">Patient Stories</p>
+      <h2 class="section-h2">What Patients Say</h2>
+      <p class="section-sub">Real stories from women who trusted Dr. Aindrila with their most precious moments.</p>
+      <div class="testi-grid">
+
+        <div class="testi-card ph-card reveal">
+          <div class="testi-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text">&ldquo;Patient testimonials coming soon. We are collecting patient stories &mdash; your experience could inspire another woman on her health journey.&rdquo;</p>
+          <div class="testi-footer">
+            <p class="testi-name">&mdash; Patient Name</p>
+            <p class="testi-cond">Condition / Procedure</p>
+          </div>
+        </div>
+
+        <div class="testi-card ph-card reveal">
+          <div class="testi-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text">&ldquo;More testimonials will be added here soon. Share your experience by reaching out via WhatsApp or Instagram.&rdquo;</p>
+          <div class="testi-footer">
+            <p class="testi-name">&mdash; Patient Name</p>
+            <p class="testi-cond">Condition / Procedure</p>
+          </div>
+        </div>
+
+        <div class="testi-card ph-card reveal">
+          <div class="testi-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text">&ldquo;Follow @that_gynae_girl on Instagram to see real patient moments and stories from Dr. Aindrila&rsquo;s growing community.&rdquo;</p>
+          <div class="testi-footer">
+            <p class="testi-name">&mdash; Patient Name</p>
+            <p class="testi-cond">Condition / Procedure</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section id="contact" class="contact-section" aria-label="Contact and book consultation">
+    <div class="container contact-grid">
+
+      <div class="contact-info reveal">
+        <p class="section-tag">Book a Consultation</p>
+        <h2 class="section-h2">Get in Touch<br /><em>We&rsquo;re Here for You</em></h2>
+        <p class="contact-desc">Ready to take the next step in your health journey? Reach out to Dr. Aindrila &mdash; she is here, with full attention and care, for every step of the way.</p>
+
+        <div class="contact-items">
+          <a href="tel:+917865902082" class="ci-row" aria-label="Call Dr. Aindrila">
+            <span class="ci-icon" aria-hidden="true">&#128222;</span>
+            <div>
+              <p class="ci-label">Call or WhatsApp</p>
+              <p class="ci-val">+91 78659 02082</p>
+            </div>
+          </a>
+          <a href="mailto:aindrila21nov@gmail.com" class="ci-row" aria-label="Email Dr. Aindrila">
+            <span class="ci-icon" aria-hidden="true">&#128231;</span>
+            <div>
+              <p class="ci-label">Email</p>
+              <p class="ci-val">aindrila21nov@gmail.com</p>
+            </div>
+          </a>
+          <div class="ci-row">
+            <span class="ci-icon" aria-hidden="true">&#128205;</span>
+            <div>
+              <p class="ci-label">Location</p>
+              <p class="ci-val">Kolkata &nbsp;&middot;&nbsp; New Alipore, West Bengal</p>
+            </div>
+          </div>
+          <div class="ci-row">
+            <span class="ci-icon" aria-hidden="true">&#128336;</span>
+            <div>
+              <p class="ci-label">Consulting Hours</p>
+              <p class="ci-val">9:00 AM &ndash; 9:00 PM &nbsp;&middot;&nbsp; All Days</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://www.instagram.com/that_gynae_girl" target="_blank" rel="noopener noreferrer" class="social-pill instagram" aria-label="Follow on Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            @that_gynae_girl
+          </a>
+          <a href="https://wa.me/917865902082" target="_blank" rel="noopener noreferrer" class="social-pill whatsapp" aria-label="Chat on WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.522 5.837L.057 23.882l6.194-1.623C7.871 23.414 9.88 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.898 0-3.673-.508-5.193-1.394l-.371-.22-3.676.964.981-3.578-.242-.381C2.614 15.77 2 13.955 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="https://www.linkedin.com/in/aindrila-kundu-8461b1305/" target="_blank" rel="noopener noreferrer" class="social-pill linkedin" aria-label="Connect on LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-col reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Send a Message</h3>
+          <div class="fg">
+            <label for="cname">Your Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="cname" name="name" placeholder="Full Name" required autocomplete="name" />
+          </div>
+          <div class="fg">
+            <label for="cphone">Phone Number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="cphone" name="phone" placeholder="+91 XXXXX XXXXX" required autocomplete="tel" />
+          </div>
+          <div class="fg">
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" name="email" placeholder="your@email.com" autocomplete="email" />
+          </div>
+          <div class="fg">
+            <label for="cconcern">Your Concern</label>
+            <select id="cconcern" name="concern">
+              <option value="">Select a topic</option>
+              <option>Antenatal / Pregnancy Care</option>
+              <option>High Risk Pregnancy</option>
+              <option>Infertility / IUI</option>
+              <option>PCOS</option>
+              <option>Endometriosis</option>
+              <option>Laparoscopic Surgery</option>
+              <option>Abnormal Uterine Bleeding</option>
+              <option>Chronic Pelvic Pain</option>
+              <option>Contraception</option>
+              <option>General Gynaecology</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="cmsg">Message (Optional)</label>
+            <textarea id="cmsg" name="message" rows="3" placeholder="Briefly describe your concern..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message &rarr;</button>
+          <p class="form-note">We respond within 24 hours. Your privacy is always protected.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="ft-name">Dr. Aindrila Kundu</p>
+          <p class="ft-creds">MBBS &middot; MS &middot; MRCOG 1</p>
+          <p class="ft-reg">WBMC Reg. No. 87200 &middot; West Bengal Medical Council</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#conditions">Conditions</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.instagram.com/that_gynae_girl" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/in/aindrila-kundu-8461b1305/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+        <div class="footer-contact-col">
+          <a href="tel:+917865902082">+91 78659 02082</a>
+          <a href="mailto:aindrila21nov@gmail.com">aindrila21nov@gmail.com</a>
+          <p>Kolkata &middot; New Alipore, West Bengal</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dr. Aindrila Kundu. All rights reserved. Designed with &#128155; in Kolkata.</p>
+        <p>This website is for informational purposes only and does not constitute medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Action Button -->
+  <a href="https://wa.me/917865902082" class="wa-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat with Dr. Aindrila on WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.522 5.837L.057 23.882l6.194-1.623C7.871 23.414 9.88 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.898 0-3.673-.508-5.193-1.394l-.371-.22-3.676.964.981-3.578-.242-.381C2.614 15.77 2 13.955 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </a>
+
+  <!-- SCRIPT — deferred, loads after HTML parse -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
